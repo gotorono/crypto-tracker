@@ -1,0 +1,31 @@
+$main: #2c3d53;
+
+@mixin gradient {
+    background: rgb(39,56,79);
+    background: linear-gradient(90deg, rgb(45, 64, 88) 10%, rgb(51, 73, 104) 50%, rgb(61, 83, 112) 100%);
+}
+
+@mixin gradient-crypto-single {
+    background: rgb(39,56,79);
+    background: linear-gradient(90deg, rgb(45, 64, 87) 10%, rgb(51, 73, 104) 50%, rgb(69, 95, 128) 100%);
+}
+
+@mixin gradient-smaller-light {
+    background: rgb(39,56,79);
+    background: linear-gradient(90deg, rgb(53, 75, 102) 10%, rgb(61, 83, 114) 50%, rgb(73, 97, 128) 100%);
+}
+
+@mixin gradient-white {
+    background: white;
+    background: linear-gradient(90deg, rgba(224, 224, 224, 0.8) 10%, rgba(236, 236, 236, 0.85) 50%, rgba(255, 255, 255, 0.85) 100%);
+}
+
+@mixin gradient-red {
+    background: rgb(255, 42, 42);
+    background: linear-gradient(90deg, rgba(92, 27, 27, 0.625) 10%, rgba(110, 19, 19, 0.625) 50%, rgba(87, 11, 11, 0.625) 100%);
+}
+
+@mixin gradient-dark {
+    background: #2c3d53;
+    background: linear-gradient(90deg, #233144 10%, #2c3d53 50%, #37465a 100%);
+}

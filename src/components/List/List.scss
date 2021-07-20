@@ -1,0 +1,16 @@
+.cryptoList {
+    width: 75%;
+    margin: 0 auto;
+
+    &.no-transition {
+        .cryptocurrency {
+            transition: none !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1324px) {
+    .cryptoList {
+        width: 95%;
+    }
+}

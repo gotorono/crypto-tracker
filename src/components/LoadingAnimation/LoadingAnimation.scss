@@ -1,0 +1,60 @@
+@mixin pseudo-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 33.333%;
+  opacity: 0.325;
+  background-color: rgba(255, 255, 255, 0.425);
+  animation: changeOpacity 750ms ease infinite;
+}
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 0.125;
+  }
+
+  50% {
+    opacity: 0.325;
+  }
+
+  100% {
+    opacity: 0.125;
+  }
+}
+
+.loadingAnimation {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 250ms ease, opacity 250ms ease;
+  left: calc(50% - 35px);
+  top: calc(50% - 25px);
+
+  &.loading {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .stripes {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    &::before {
+      @include pseudo-element;
+      left: 46px;
+      animation-delay: 600ms;
+    }
+    &::after {
+      @include pseudo-element;
+      left: 23px;
+      animation-delay: 400ms;
+    }
+    div {
+      @include pseudo-element;
+      left: 0;
+      animation-delay: 200ms;
+    }
+  }
+}
