@@ -1,1 +1,1 @@
-# crypto-tracker
+# Simply track cryptos!
